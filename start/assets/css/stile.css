@@ -1,0 +1,226 @@
+/* IMPOSTAZIONI GENERALI */
+html,
+body {
+    color: #000;
+    font-size: 1.5rem;
+    font-family: 'Fira Sans', sans-serif;
+    line-height: 1.8;
+}
+
+/* HEADER */
+header {
+    width: 100%;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#logo {
+    padding: 30px;
+    align-self: center;
+}
+
+
+#topnav {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+}
+
+
+
+
+
+
+
+/* MAIN */
+
+main {
+    text-align: center;
+}
+
+main div{
+    margin:50px;
+}
+h1 {
+    color: white;
+    font-size: 4rem;
+    line-height: 1;
+}
+
+h2 {
+    padding: 10px;
+    font-size: 3.5rem;
+    line-height: 1.1;
+}
+
+h3 {
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+p {
+    font-size: 62.5%;
+    padding: 10px;
+}
+
+#banner {
+    background-image: url(../images/banner.jpg);
+    width: 100%;
+
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+}
+
+#banner div {
+    width: 80%;
+    color: white;
+    align-self: center;
+    padding: 80px;
+    margin: 30px;
+}
+
+#info {
+    box-shadow: #d3d3d3;
+}
+
+.infoclasse {
+    font-size: 1.9rem;
+    color: white;
+    background: rgb(108, 193, 226);
+    background: linear-gradient(90deg, rgba(108, 193, 226, 1) 0%, rgba(57, 47, 122, 1) 64%);
+    margin: 20px;
+    text-align: center;
+    padding: 10px;
+    width: 40%;
+}
+
+aside {
+    padding: 50px;
+    text-align: center;
+}
+
+article {
+    text-align: center;
+}
+
+
+#scrivici {
+    background-color: #0c0633;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    padding: 60px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#tabellagrande{
+    display:hidden;
+    justify-content: center;
+    margin:60px 10px;
+    padding: 10px;
+
+}
+
+th {
+    background-color: rgb(102, 129, 159);
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #d2dce7;
+}
+
+
+img{
+    width:80%;
+}
+
+
+
+/* FOOTER */
+footer {
+    padding: 30px;
+    background-color: rgb(238, 238, 238);
+}
+
+
+i {
+    color: #e42424;
+    background-color: white;
+}
+
+/* RESPONSIVE */
+@media screen and (min-width:768px) {
+    header {
+
+        display: grid;
+        grid-template-areas: 'logo topnav';
+        column-gap: 10px;
+
+    }
+
+    #logo {
+        grid-area: logo;
+        align-self: center;
+        padding: 20px;
+    }
+
+    #topnav {
+
+        grid-area: topnav;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+
+    }
+
+    #topnav a {
+        padding: 40px;
+
+
+        text-align: button;
+        vertical-align: center;
+
+
+    }
+
+    #topnav a:hover {
+        color: red;
+        text-decoration: underline;
+    }
+
+    #registrati {
+        font-size: 1.9rem;
+        color: white;
+        background: rgb(108, 193, 226);
+        background: linear-gradient(90deg, rgba(108, 193, 226, 1) 0%, rgba(57, 47, 122, 1) 64%);
+        margin: 20px;
+
+    }
+
+    article {
+        margin: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    #tabellagrande {
+    
+        justify-content: center;
+        margin:60px 10px;
+        padding: 10px;
+    
+    }
+    
